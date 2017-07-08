@@ -44,7 +44,9 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-
+                    holder.store_favorite_tgbtn.setBackgroundDrawable(holder.itemView.getResources().getDrawable(android.R.drawable.btn_star_big_on));
+                } else {
+                    holder.store_favorite_tgbtn.setBackgroundDrawable(holder.itemView.getResources().getDrawable(android.R.drawable.btn_star_big_off));
                 }
 
             }

@@ -22,8 +22,8 @@
 
             <ImageView
                 android:id="@+id/ivImage_scl"
-                android:layout_width="93dp"
-                android:layout_height="139dp"
+                android:layout_width="94dp"
+                android:layout_height="141dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -32,6 +32,7 @@
                 android:adjustViewBounds="true"
                 android:minHeight="150dp"
                 android:minWidth="110dp"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
