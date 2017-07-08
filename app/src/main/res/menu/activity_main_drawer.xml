@@ -3,21 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/manage_coupon"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="쿠폰관리" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/history_use"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="사용내역" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/QnA"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="QnA" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/setting"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="설정" />
+        <item
+            android:id="@+id/customcenter"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="고객센터" />
     </group>
 
     <item android:title="Communicate">
