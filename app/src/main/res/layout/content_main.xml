@@ -20,9 +20,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="match_parent"
             android:layout_weight="0.4"
-            android:src="@mipmap/banner" />
+            android:src="@drawable/banner" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,25 +32,25 @@
 
             <ImageButton
                 android:layout_width = "match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:id = "@+id/button1"
                 android:text = "시장소개"
                 android:layout_weight="0.33"
-                android:src = "@mipmap/main_btn1"/>
+                android:src = "@drawable/main_btn1"/>
             <ImageButton
                 android:layout_width = "match_parent"
                 android:layout_height="match_parent"
                 android:id = "@+id/button2"
                 android:text = "오시는길"
                 android:layout_weight="0.33"
-                android:src = "@mipmap/main_btn2"/>
+                android:src = "@drawable/main_btn2"/>
             <ImageButton
                 android:layout_width = "match_parent"
                 android:layout_height="match_parent"
                 android:id = "@+id/button3"
                 android:text = "이벤트"
                 android:layout_weight="0.33"
-                android:src = "@mipmap/main_btn3"/>
+                android:src = "@drawable/main_btn3"/>
         </LinearLayout>
 
     <LinearLayout
@@ -64,21 +64,21 @@
                     android:id = "@+id/button4"
                     android:text = "음식점"
                     android:layout_weight="0.33"
-                    android:src = "@mipmap/main_btn4"/>
+                    android:src = "@drawable/main_btn4"/>
                 <ImageButton
                     android:layout_width = "match_parent"
                     android:layout_height="match_parent"
                     android:id = "@+id/button5"
                     android:text = "의류"
                     android:layout_weight="0.33"
-                    android:src = "@mipmap/main_btn5"/>
+                    android:src = "@drawable/main_btn5"/>
                 <ImageButton
                     android:layout_width = "match_parent"
                     android:layout_height="match_parent"
                     android:id = "@+id/button6"
                     android:text = "야채"
                     android:layout_weight="0.33"
-                    android:src = "@mipmap/main_btn6"/>
+                    android:src = "@drawable/main_btn6"/>
         </LinearLayout>
 
     </LinearLayout>
