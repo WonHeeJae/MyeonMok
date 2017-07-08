@@ -19,7 +19,6 @@ import com.example.hh.myeonmok.R;
 
 public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.ViewHolder> {
 
-    /* 이 배열은 테스트를 위한 더미값 입니다. */
     private String[] titles = {"생선판매점", "의류판매점", "치킨판매점", "애완용품샵", "육류판매점", "맛나분식집"};
     private String[] phones = {"031-635-1111", "031-635-2222", "031-635-3333", "031-635-4444", "031-635-5555", "031-635-6666"};
     private String[] holidays = {"연중무휴", "연중무휴", "연중무휴", "연중무휴", "연중무휴", "연중무휴"};
