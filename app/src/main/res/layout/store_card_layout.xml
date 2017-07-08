@@ -33,7 +33,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Store Name"
-            android:textSize="18sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView2"
