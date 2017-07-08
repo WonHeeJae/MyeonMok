@@ -13,9 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener{
+
+    ImageButton btn_market, btn_road, btn_event, btn_food, btn_clothes, btn_vegetable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +28,20 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        btn_market = (ImageButton)findViewById(R.id.button1);
+        btn_road = (ImageButton)findViewById(R.id.button2);
+        btn_event = (ImageButton)findViewById(R.id.button3);
+        btn_food = (ImageButton)findViewById(R.id.button4);
+        btn_clothes = (ImageButton)findViewById(R.id.button5);
+        btn_vegetable = (ImageButton)findViewById(R.id.button6);
+
+        btn_market.setOnClickListener(this);
+        btn_road.setOnClickListener(this);
+        btn_event.setOnClickListener(this);
+        btn_food.setOnClickListener(this);
+        btn_clothes.setOnClickListener(this);
+        btn_vegetable.setOnClickListener(this);
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -81,13 +91,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.manage_coupon) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.history_use) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.QnA) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.setting) {
+
+        }else if (id == R.id.customcenter) {
 
         } else if (id == R.id.nav_share) {
 
@@ -98,5 +110,30 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.button1){
+            Intent intent01 = new Intent(MainActivity.this, StoreListActivity.class);
+            startActivity(intent01);
+        }
+        if(v.getId() == R.id.button2){
+
+        }
+        if(v.getId() == R.id.button3){
+
+        }
+        if(v.getId() == R.id.button4){
+
+        }
+        if(v.getId() == R.id.button5){
+
+        }
+        if(v.getId() == R.id.button6){
+
+        }
+
+
     }
 }
