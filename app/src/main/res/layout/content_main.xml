@@ -14,7 +14,8 @@
         android:layout_weight="1"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-10dp">
+        tools:layout_editor_absoluteY="1"
+        android:paddingTop = "5dp">
 
 
         <ImageView
