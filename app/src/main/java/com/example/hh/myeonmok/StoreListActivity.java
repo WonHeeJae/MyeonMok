@@ -19,9 +19,10 @@ public class StoreListActivity extends AppCompatActivity {
 
         store_list_recyclerView = (RecyclerView) findViewById(R.id.store_list_recycleView);
 
+        // RecyclerView 의 아이템 레이아웃을 설정
         layoutManager = new LinearLayoutManager(this);
         store_list_recyclerView.setLayoutManager(layoutManager);
-
+        // RecyclerView 에 표시될 아답터 지정
         adapter = new StoreListAdapter();
         store_list_recyclerView.setAdapter(adapter);
     }
