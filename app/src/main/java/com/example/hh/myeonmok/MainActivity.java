@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.button1){
+            // 판매점 리스트를 보여주는 액티비티 생성
             Intent intent01 = new Intent(MainActivity.this, StoreListActivity.class);
             startActivity(intent01);
         }
