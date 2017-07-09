@@ -29,7 +29,7 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
     private String[] holidays = {"연중무휴", "연중무휴", "연중무휴", "연중무휴", "연중무휴", "연중무휴"};
     private boolean[] favorites = {true, true, false, false, true, false};
     private int[] images = {R.drawable.dummy, R.drawable.dummy, R.drawable.dummy, R.drawable.dummy, R.drawable.dummy, R.drawable.dummy};
-    private Context mContext = null;
+    private Context mContext = null; // 다이얼로그 생성시 사용
 
     public StoreListAdapter(Context context) {
         this.mContext = context;
@@ -44,7 +44,7 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        // 뷰 값 설정
+        /*  뷰 값 설정 */
         holder.store_image_imgView.setImageResource(images[position]);
         holder.store_title_tv.setText(titles[position]);
         holder.store_phone_tv.setText(phones[position]);
@@ -81,6 +81,11 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
         });
     }
 
+    @Override
+    public int getItemCount() {
+        return titles.length;
+    }
+
     /**
      * 상점의 위치 정보를 다이얼로그로 나타냄
      * @param position 현재 누른 아이템의 위치
@@ -109,11 +114,6 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
         });
 
         return dialog;
-    }
-
-    @Override
-    public int getItemCount() {
-        return titles.length;
     }
 
     /**
