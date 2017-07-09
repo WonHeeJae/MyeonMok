@@ -30,7 +30,7 @@ public class StoreListActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         store_list_recyclerView.setLayoutManager(layoutManager);
         // RecyclerView 에 표시될 아답터 지정
-        adapter = new StoreListAdapter();
+        adapter = new StoreListAdapter(this);
         store_list_recyclerView.setAdapter(adapter);
     }
 }
