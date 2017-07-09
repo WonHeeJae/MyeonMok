@@ -17,7 +17,9 @@ import android.widget.ToggleButton;
 import com.example.hh.myeonmok.R;
 
 /**
- * Created by wooty on 2017-07-08.
+ * RecyclerView 에 사용될 아답터
+ * @author  WooTaeYoung
+ * @since 2017-07-08 토요일
  */
 
 public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.ViewHolder> {
@@ -82,7 +84,7 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
     /**
      * 상점의 위치 정보를 다이얼로그로 나타냄
      * @param position 현재 누른 아이템의 위치
-     * @return
+     * @return 다이얼로그 반환
      */
     private Dialog locationDialog(int position) {
         ImageView location_ImageView;
@@ -114,7 +116,9 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
         return titles.length;
     }
 
-
+    /**
+     * 뷰 홀더
+     */
     class ViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView store_image_imgView;
