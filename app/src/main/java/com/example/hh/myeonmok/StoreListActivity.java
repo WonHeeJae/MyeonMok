@@ -1,5 +1,6 @@
 package com.example.hh.myeonmok;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,7 +17,13 @@ public class StoreListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_list);
+        /* 액션바 뒤로가기 버튼 */
+        ActionBar actionBar = getSupportActionBar();
 
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+
+        /* 코드 구현 부분 */
         store_list_recyclerView = (RecyclerView) findViewById(R.id.store_list_recycleView);
 
         // RecyclerView 의 아이템 레이아웃을 설정
