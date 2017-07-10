@@ -64,7 +64,6 @@ public class CouponDialog extends Dialog {
 
         tvTitle.setText(mTitle);
         tvOutDate.setText(mDate);
-
         setBarcodeBitmap();
 
         imgbtnClose.setOnClickListener(new View.OnClickListener() {

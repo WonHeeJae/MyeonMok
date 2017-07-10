@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.example.hh.myeonmok.Adapter.CouponListAdapter;
 import com.example.hh.myeonmok.Adapter.StoreListAdapter;
@@ -23,7 +24,6 @@ public class CouponBoxActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coupon_box);
-
         /* 액션바 뒤로가기 버튼 */
         ActionBar actionBar = getSupportActionBar();
 
