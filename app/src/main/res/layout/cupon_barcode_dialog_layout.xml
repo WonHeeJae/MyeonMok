@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- WooTaeYoung -->
+<!-- 걷 으로 볼때는 정상적으로 안보이겠지만 실제 구동시 정상 출력됨. (바코드 이미지가 들어감에 따라 뷰들이 재정렬됨. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

@@ -17,6 +17,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+/**
+ * @author 작성: WonHeeJae, 수정: WooTaeYoung
+ */
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener{
 

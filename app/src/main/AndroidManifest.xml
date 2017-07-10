@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!-- WooTaeYoung 작성 (부터) -->
         <activity android:name=".StoreListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -31,6 +31,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <!-- WooTaeYoung 작성 (까지) -->
     </application>
 
 </manifest>
