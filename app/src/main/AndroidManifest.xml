@@ -20,15 +20,22 @@
             </intent-filter>
         </activity>
         <!-- WooTaeYoung 작성 (부터) -->
-        <activity android:name=".StoreListActivity"
+        <activity
+            android:name=".StoreListActivity"
             android:label="상점목록(사용자)">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".CouponBoxActivity"
+        <activity
+            android:name=".CouponBoxActivity"
             android:label="쿠폰보관함(사용자)">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".CouponManagementActivity"
+            android:label="쿠폰관리(상인)">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
