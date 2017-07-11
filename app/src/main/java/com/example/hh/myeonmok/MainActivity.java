@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        btn_market = (ImageButton)findViewById(R.id.button1);
-        btn_road = (ImageButton)findViewById(R.id.button2);
-        btn_event = (ImageButton)findViewById(R.id.button3);
-        btn_food = (ImageButton)findViewById(R.id.button4);
-        btn_clothes = (ImageButton)findViewById(R.id.button5);
-        btn_vegetable = (ImageButton)findViewById(R.id.button6);
+        btn_market = (ImageButton)findViewById(R.id.imgbtnStoreInfo_cm);
+        btn_road = (ImageButton)findViewById(R.id.imgbtnWay_cm);
+        btn_event = (ImageButton)findViewById(R.id.imgbtnEvent_cm);
+        btn_food = (ImageButton)findViewById(R.id.imgbtnFood_cm);
+        btn_clothes = (ImageButton)findViewById(R.id.imgbtnClothes_cm);
+        btn_vegetable = (ImageButton)findViewById(R.id.imgbtnVegetable_cm);
 
         btn_market.setOnClickListener(this);
         btn_road.setOnClickListener(this);
@@ -99,7 +99,8 @@ public class MainActivity extends AppCompatActivity
             Log.d("TAG", "CouponBoxActivity.class");
             startActivity(new Intent(this, CouponBoxActivity.class));
         } else if (id == R.id.history_use) {
-
+            Log.d("TAG", "CouponManagementActivity.class");
+            startActivity(new Intent(this, CouponManagementActivity.class));
         } else if (id == R.id.QnA) {
 
         } else if (id == R.id.setting) {
@@ -120,24 +121,24 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.button1){
+        if(v.getId() == R.id.imgbtnStoreInfo_cm){
             // 판매점 리스트를 보여주는 액티비티 생성
             Intent intent01 = new Intent(MainActivity.this, StoreListActivity.class);
             startActivity(intent01);
         }
-        if(v.getId() == R.id.button2){
+        if(v.getId() == R.id.imgbtnWay_cm){
 
         }
-        if(v.getId() == R.id.button3){
+        if(v.getId() == R.id.imgbtnEvent_cm){
 
         }
-        if(v.getId() == R.id.button4){
+        if(v.getId() == R.id.imgbtnFood_cm){
 
         }
-        if(v.getId() == R.id.button5){
+        if(v.getId() == R.id.imgbtnClothes_cm){
 
         }
-        if(v.getId() == R.id.button6){
+        if(v.getId() == R.id.imgbtnVegetable_cm){
 
         }
 
