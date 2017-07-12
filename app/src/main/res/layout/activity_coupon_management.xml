@@ -63,13 +63,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/coupon_management_recyclerView"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnCouponAdd_acm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:background="@drawable/coupon_management_activity_btn_selector"
+            android:text="쿠폰 등록"
+            android:textColor="@color/cardview_light_background" />
     </LinearLayout>
 </RelativeLayout>
