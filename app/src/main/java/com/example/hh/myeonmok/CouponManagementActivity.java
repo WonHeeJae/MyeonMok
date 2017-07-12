@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Button;
 
 import com.example.hh.myeonmok.Adapter.CouponListAdapter;
 import com.example.hh.myeonmok.Adapter.CouponManagementListAdapter;
@@ -19,6 +20,8 @@ public class CouponManagementActivity extends AppCompatActivity {
     RecyclerView.LayoutManager layoutManager;
     RecyclerView.Adapter adapter;
 
+    Button btnCouponAdd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,7 @@ public class CouponManagementActivity extends AppCompatActivity {
 
         /* 코드 구현 부분 */
         coupon_management_recyclerView = (RecyclerView) findViewById(R.id.coupon_management_recyclerView);
+        btnCouponAdd = (Button) findViewById(R.id.btnCouponAdd_acm);
 
         // RecyclerView 의 아이템 레이아웃을 설정
         layoutManager = new LinearLayoutManager(this);
