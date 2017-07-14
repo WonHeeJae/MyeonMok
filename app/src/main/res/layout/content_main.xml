@@ -10,11 +10,10 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="2dp"
-        android:layout_weight="1"
         android:orientation="vertical"
+        android:weightSum="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -22,26 +21,28 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imgvEvent_cm"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0.5dp"
             android:layout_marginLeft="1.5dp"
+            android:layout_weight="0.3"
             android:scaleType="fitXY"
             android:src="@drawable/banner" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ll_btnGroup1_cm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginRight="1dp"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:layout_weight="0.35"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imgbtnStoreInfo_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn1"
                 android:text="시장소개" />
 
@@ -49,7 +50,7 @@
                 android:id="@+id/imgbtnWay_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn2"
                 android:text="오시는길" />
 
@@ -57,23 +58,24 @@
                 android:id="@+id/imgbtnEvent_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn3"
                 android:text="이벤트" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ll_btnGroup2_cm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginRight="1dp"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:layout_weight="0.35"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imgbtnFood_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn4"
                 android:text="음식점" />
 
@@ -81,7 +83,7 @@
                 android:id="@+id/imgbtnClothes_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn5"
                 android:text="의류" />
 
@@ -89,9 +91,49 @@
                 android:id="@+id/imgbtnVegetable_cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.33"
+                android:layout_weight="1"
                 android:background="@drawable/main_btn6"
                 android:text="야채" />
+        </LinearLayout>
+
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu_cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome_main"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btnPrev_main"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btnNext_main"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btnRefresh_main"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btnSearch_main"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
     </LinearLayout>
